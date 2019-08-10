@@ -40,12 +40,13 @@
             // 
             // btnConnect
             // 
-            this.btnConnect.Location = new System.Drawing.Point(503, 27);
+            this.btnConnect.Location = new System.Drawing.Point(503, 21);
             this.btnConnect.Name = "btnConnect";
-            this.btnConnect.Size = new System.Drawing.Size(104, 31);
+            this.btnConnect.Size = new System.Drawing.Size(118, 43);
             this.btnConnect.TabIndex = 9;
             this.btnConnect.Text = "Connect";
             this.btnConnect.UseVisualStyleBackColor = true;
+            this.btnConnect.Click += new System.EventHandler(this.btnConnect_Click);
             // 
             // txtPort
             // 
@@ -53,7 +54,7 @@
             this.txtPort.Name = "txtPort";
             this.txtPort.Size = new System.Drawing.Size(96, 31);
             this.txtPort.TabIndex = 8;
-            this.txtPort.Text = "8910";
+            this.txtPort.Text = "32400";
             // 
             // label2
             // 
@@ -83,7 +84,7 @@
             // 
             // txtMesssge
             // 
-            this.txtMesssge.Location = new System.Drawing.Point(95, 74);
+            this.txtMesssge.Location = new System.Drawing.Point(95, 107);
             this.txtMesssge.Multiline = true;
             this.txtMesssge.Name = "txtMesssge";
             this.txtMesssge.Size = new System.Drawing.Size(650, 151);
@@ -91,16 +92,17 @@
             // 
             // btnSend
             // 
-            this.btnSend.Location = new System.Drawing.Point(641, 245);
+            this.btnSend.Location = new System.Drawing.Point(621, 278);
             this.btnSend.Name = "btnSend";
-            this.btnSend.Size = new System.Drawing.Size(104, 31);
+            this.btnSend.Size = new System.Drawing.Size(124, 47);
             this.btnSend.TabIndex = 11;
             this.btnSend.Text = "Send";
             this.btnSend.UseVisualStyleBackColor = true;
+            this.btnSend.Click += new System.EventHandler(this.btnSend_Click);
             // 
             // txtStatus
             // 
-            this.txtStatus.Location = new System.Drawing.Point(95, 299);
+            this.txtStatus.Location = new System.Drawing.Point(95, 375);
             this.txtStatus.Multiline = true;
             this.txtStatus.Name = "txtStatus";
             this.txtStatus.Size = new System.Drawing.Size(650, 217);
@@ -110,7 +112,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(784, 553);
+            this.ClientSize = new System.Drawing.Size(784, 627);
             this.Controls.Add(this.txtStatus);
             this.Controls.Add(this.btnSend);
             this.Controls.Add(this.txtMesssge);
@@ -120,7 +122,9 @@
             this.Controls.Add(this.txtHost);
             this.Controls.Add(this.label1);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Client";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

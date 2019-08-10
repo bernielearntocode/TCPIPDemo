@@ -60,7 +60,7 @@
             this.txtPort.Name = "txtPort";
             this.txtPort.Size = new System.Drawing.Size(96, 31);
             this.txtPort.TabIndex = 3;
-            this.txtPort.Text = "8910";
+            this.txtPort.Text = "32400";
             // 
             // label2
             // 
@@ -75,23 +75,25 @@
             // 
             this.btnStart.Location = new System.Drawing.Point(523, 35);
             this.btnStart.Name = "btnStart";
-            this.btnStart.Size = new System.Drawing.Size(104, 31);
+            this.btnStart.Size = new System.Drawing.Size(124, 51);
             this.btnStart.TabIndex = 4;
             this.btnStart.Text = "Start";
             this.btnStart.UseVisualStyleBackColor = true;
+            this.btnStart.Click += new System.EventHandler(this.btnStart_Click);
             // 
             // btnStop
             // 
-            this.btnStop.Location = new System.Drawing.Point(638, 35);
+            this.btnStop.Location = new System.Drawing.Point(653, 35);
             this.btnStop.Name = "btnStop";
-            this.btnStop.Size = new System.Drawing.Size(104, 31);
+            this.btnStop.Size = new System.Drawing.Size(121, 51);
             this.btnStop.TabIndex = 5;
             this.btnStop.Text = "Stop";
             this.btnStop.UseVisualStyleBackColor = true;
+            this.btnStop.Click += new System.EventHandler(this.btnStop_Click);
             // 
             // txtStatus
             // 
-            this.txtStatus.Location = new System.Drawing.Point(44, 90);
+            this.txtStatus.Location = new System.Drawing.Point(44, 146);
             this.txtStatus.Multiline = true;
             this.txtStatus.Name = "txtStatus";
             this.txtStatus.Size = new System.Drawing.Size(698, 247);
@@ -101,7 +103,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(790, 383);
+            this.ClientSize = new System.Drawing.Size(890, 585);
             this.Controls.Add(this.txtStatus);
             this.Controls.Add(this.btnStop);
             this.Controls.Add(this.btnStart);
@@ -111,6 +113,7 @@
             this.Controls.Add(this.label1);
             this.Name = "Form1";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
